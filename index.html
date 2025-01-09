@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="main w-full font-['Helvetica_Now_Display']">
+    <nav class="w-full fixed top-0 left-0 px-10 py-3 flex justify-between items-center z-10">
+      <img
+        class="w-[160px] mix-blend-darken filter saturate-150 contrast-125 z-10"
+        src="https://purepng.com/public/uploads/large/purepng.com-cyberpunk-2077-logologosgame-logogame-logosgameslogocyberpunk-2077-12715289961328hlgr.png"
+      />
+      <div class="flex gap-5 items-center">
+        <a href="#" class="tracking-tight text-white hover:text-yellow-400 transition-colors hover:[text-shadow:0_0_10px_rgb(59,130,246)]">Games</a>
+        <a href="#" class="tracking-tight text-white hover:text-yellow-400 transition-colors hover:[text-shadow:0_0_10px_rgb(59,130,246)]">News</a>
+        <a href="#" class="tracking-tight text-white hover:text-yellow-400 transition-colors hover:[text-shadow:0_0_10px_rgb(59,130,246)]">Community</a>
+        <a href="#" class="tracking-tight text-white hover:text-yellow-400 transition-colors hover:[text-shadow:0_0_10px_rgb(59,130,246)]">Shop</a>
+        <a href="#" class="tracking-tight text-white hover:text-yellow-400 transition-colors hover:[text-shadow:0_0_10px_rgb(59,130,246)]">Support</a>
+      </div>      
+      
+    </nav>
+    <div class="w-full h-screen overflow-hidden">
+      <img
+        class="absolute w-3/4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-lighten filter saturate-150 contrast-125"
+        src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=640&crop=smart&auto=webp&s=8c31445d1ee6f6993331b7d7d11bad170086631c"
+      />
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="section2 w-full h-screen bg-[#000] flex">
+      <div class="left w-1/2 py-10 my-20">
+        <img loading="lazy" itemprop="image" src="https://cdn-s.cdprojektred.com/news/18463714c476811689795a07f3b0599bfd6a7207_q90_592x334.png" srcset="https://cdn-s.cdprojektred.com/news/18463714c476811689795a07f3b0599bfd6a7207_q90_592x334.png 592w, https://cdn-l.cdprojektred.com/news/18463714c476811689795a07f3b0599bfd6a7207_q90_1280x720.png 1280w">
+        <div class="flex justify-center align-center">
+          <h1 class="text-white text-[19px]">Join us for a new episode of #REDstreams, where we'll dive deep into the features Coming Soon TM for Cyberpunk 2077 in Update 2.2! </h1>
+        </div>
+      </div>
+      <div class="right flex justify-between align-center mx-10 my-20">
+        <div class="top px-10 my-10">
+          <div class="text-white">
+            <img loading="lazy" itemprop="image" src="https://cdn-s.cdprojektred.com/news/2f599625808918084d792f96786386e04e2da7a8_q90_592x334.png">
+            <h3 class="news__title">Just Announced — Cyberpunk 2077: Ultimate Edition Coming to Mac!</h3>
+          </div>
+          <div class="text-white my-10">
+            <img loading="lazy" itemprop="image" src="https://cdn-s.cdprojektred.com/news/ffd02ee1205654cc3a257b0471fae0e01fd6899b_q90_592x334.png">
+            <h3 class="news__title">#Blocktober 5 — Sebastian McBride and Mariusz Kubów </h3>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="text-white my-10">
+            <img loading="lazy" itemprop="image" src="https://cdn-s.cdprojektred.com/news/2a46a7b1995de881d536a8cc0d98f475db0d6153_q90_592x334.png">
+            <h3 class="news__title">#Blocktober 4 — Sebastian McBride</h3>
+          </div>
+          <div class="text-white my-10">
+            <img loading="lazy" itemprop="image" src="https://cdn-s.cdprojektred.com/news/191d8c639f2b1ce9e7bed868599fe9cdb025613b_q90_592x334.png">
+            <h3 class="news__title">#Blocktober 3 — Andrzej Giełzak</h3>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full">
+      <div class="w-full flex items-center justify-center py-1 my-10" >
+        <a 
+        href="#" 
+        class="button border-2 border-[#00F0FF] text-[#00F0FF] px-6 py-2 text-xl font-bold neon-effect transition-all duration-300 hover:bg-[#00F0FF] hover:text-black">
+        More News
+      </a>
+      </div>
+      <img class="bottom-0 left-0" src="https://www.cyberpunk.net/build/images/razor-18e21da3.svg" alt="">
+    </div>    
+    
+    <div class="section3 relative w-full h-[1600px] bg-[#FCEE0A]">
+      <!-- <div class="w-[90%] h-[85%] border-b-2 border-[#999484] flex justify-center items-center">
+        <div class="w-full h-[80%] border-8 border-black bg-black flex justify-center items-center overflow-hidden">
+          <div class="h-full w-full flex justify-between space-x-4">
+            <img loading="lazy" class="product__image w-1/4" src="https://www.cyberpunk.net/build/images/home8/product-cp77@1x-5cf31fe8.jpg" srcset="https://www.cyberpunk.net/build/images/home8/product-cp77@1x-5cf31fe8.jpg 1x, https://www.cyberpunk.net/build/images/home8/product-cp77@2x-4a388c1d.jpg 2x">
+            <img loading="lazy" class="product__image w-1/4" src="https://www.cyberpunk.net/build/images/home8/product-phantomliberty-final@1x-1080ee25.jpg" srcset="https://www.cyberpunk.net/build/images/home8/product-phantomliberty-final@1x-1080ee25.jpg 1x, https://www.cyberpunk.net/build/images/home8/product-phantomliberty-final@2x-21744e1b.jpg 2x">
+            <img loading="lazy" class="product__image w-1/4" src="https://www.cyberpunk.net/build/images/home8/product-edgerunners@1x-6f888a59.jpg" srcset="https://www.cyberpunk.net/build/images/home8/product-edgerunners@1x-6f888a59.jpg 1x, https://www.cyberpunk.net/build/images/home8/product-edgerunners@2x-ef51ea00.jpg 2x">
+            <img loading="lazy" class="product__image w-1/4" src="https://www.cyberpunk.net/build/images/home8/product-gear@1x-ec02a9d0.jpg" srcset="https://www.cyberpunk.net/build/images/home8/product-gear@1x-ec02a9d0.jpg 1x, https://www.cyberpunk.net/build/images/home8/product-gear@2x-d7cc2a2b.jpg 2x">
+          </div>
+        </div> -->
+
+
+        <div class="textfuture items-center w-[50%] -translate-x-[-50%] py-10">
+          <h1 class="text-center text-4xl font-bold font-serif pt-10 mt-10">Welcome to the dark future</h1> <br>
+          <h2 class="text-center text-xl">Immerse yourself in the Cyberpunk universe, from the original storyline of Cyberpunk 2077 and its gripping spy-thriller expansion Phantom Liberty to the award-winning anime series Cyberpunk: Edgerunners — there are countless stories to discover in the deadly megalopolis of Night City.</h2>
+        </div>
+
+        <div class="flex justify-center align-center items-center py-[200px] px-10 mx-10">
+          <div class="relative h-[350px] w-[45%] px-10 mx-10 flex justify-center items-center">
+            <!-- Background Image -->
+            <img
+            src="https://w7.pngwing.com/pngs/799/480/png-transparent-mask-frames-design-border-text-rectangle.png"
+            alt=""
+            class="absolute inset-0 w-full h-full object-fill z-0 mix-blend-darken filter saturate-150 contrast-125"
+            />
+            
+            <!-- Foreground Image -->
+            <img
+            loading="lazy"
+            src="https://www.cyberpunk.net/build/images/cyberpunk/keyart-myrewards@1x-189511f5.jpg"
+            srcset="https://www.cyberpunk.net/build/images/cyberpunk/keyart-myrewards@1x-189511f5.jpg 1x, https://www.cyberpunk.net/build/images/cyberpunk/keyart-myrewards@2x-c83c4b97.jpg 2x"
+            class="relative z-10"
+            />
+          </div>
+          
+          <section class="right-let w-[55%] text-center">
+            <section class="text-black text-2xl items-center font-bold">YOUR LEGEND STARTS HERE</section> <br> <br>
+            <section class="text-black text-xl">Step into the shoes of V, a cyberpunk mercenary for hire and do what it takes to make a name for yourself in Night City, a megalopolis obsessed with power, glamour, and body modification. Legends are made here. What will yours be?</section>
+          </section>
+        </div>
+        <div class="flex justify-center align-center items-center  px-10 mx-10">
+          <section class="right-let w-[55%] text-center">
+            <section class="text-black text-2xl items-center font-bold">FREEDOM ALWAYS COMES AT A PRICE</section> <br> <br>
+            <section class="text-black text-xl">Phantom Liberty is a new spy-thriller adventure for Cyberpunk 2077. Return as cyber-enhanced mercenary V and embark on a high-stakes mission of espionage and intrigue to save the NUS President. In the dangerous district of Dogtown, you must forge alliances within a web of shattered loyalties and sinister political machinations. Do you have what it takes to survive?</section>
+          </section>
+          <div class="relative h-[350px] w-[45%] px-10 mx-10 flex justify-center items-center">
+            <!-- Background Image -->
+            <img
+              src="https://w7.pngwing.com/pngs/799/480/png-transparent-mask-frames-design-border-text-rectangle.png"
+              alt=""
+              class="absolute inset-0 w-full h-full object-fill z-0 mix-blend-darken filter saturate-150 contrast-125"
+            />
+            
+            <!-- Foreground Image -->
+            <img
+              class="swiper-lazy swiper-lazy-loaded relative z-8"
+              srcset="https://www.cyberpunk.net/build/images/phantom-liberty/objective-3@1x-7a7a9069.jpg 1x, https://www.cyberpunk.net/build/images/phantom-liberty/objective-3@2x-cdd91922.jpg 2x"
+              src="https://www.cyberpunk.net/build/images/phantom-liberty/objective-3@1x-7a7a9069.jpg"
+            />
+          </div>
+        </div>
+        <img
+          class="absolute bottom-0"
+          src="https://www.cyberpunk.net/build/images/razor-18e21da3.svg"
+          alt="Razor Icon"
+          style="filter: brightness(0) invert(0);"
+        />
+
+    </div>    
+    <div class="w-full h-screen">
+    </div>
+  </div> 
+
+  <!-- GSAP and ScrollTrigger via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
